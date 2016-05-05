@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  对于UIView 直接.语法 能拿到 下面四个属性
+ */
+
 @interface UIView (WKFFrame)
 
 

@@ -25,7 +25,10 @@
   
 }
 
-- (void)imageUrlStringWithUrl:(NSString *)urlString andSuccessBlock:(downlownImageSucces)imageRealSize notComplet:(notComplete)notReal{
+- (void)imageUrlStringWithUrl:(NSString *)urlString
+              andSuccessBlock:(DownlownImageSucces)imageRealSize
+                   notComplet:(NotComplete)notReal{
+  
   if (!urlString) {
     notReal();
     return;
