@@ -14,7 +14,8 @@
 #define RGBAcolor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 #define HEXRGBCOLOR(h) RGBcolor(((h>>16)&0xFF), ((h>>8)&0xFF), (h&0xFF))
 #define HEXRGBACOLOR(h,a) RGBAcolor(((h>>16)&0xFF), ((h>>8)&0xFF), (h&0xFF), a)
-
+//随机色
+#define RandomColor RGBcolor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 //解决循环引用
 #define weakify(va) \
