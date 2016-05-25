@@ -9,11 +9,15 @@
 #ifndef common_h
 #define common_h
 
+// height or width
+#define screenWidth   [UIApplication sharedApplication].keyWindow.frame.size.width
+#define screenHeight  [UIApplication sharedApplication].keyWindow.frame.size.height
+
 //颜色 rgb 和16进制颜色
 #define RGBcolor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define RGBAcolor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
-#define HEXRGBCOLOR(h) RGBcolor(((h>>16)&0xFF), ((h>>8)&0xFF), (h&0xFF))
-#define HEXRGBACOLOR(h,a) RGBAcolor(((h>>16)&0xFF), ((h>>8)&0xFF), (h&0xFF), a)
+#define HEXRGBcolor(h) RGBcolor(((h>>16)&0xFF), ((h>>8)&0xFF), (h&0xFF))
+#define HEXRGBAcolor(h,a) RGBAcolor(((h>>16)&0xFF), ((h>>8)&0xFF), (h&0xFF), a)
 //随机色
 #define RandomColor RGBcolor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 

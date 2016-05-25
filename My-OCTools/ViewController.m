@@ -22,8 +22,9 @@ typedef void(^Test)();
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+   UIApplication * app = [UIApplication sharedApplication];
+  self.view.backgroundColor = HEXRGBcolor(0x454545);
   
-  self.view.backgroundColor = HEXRGBCOLOR(0x454545);
   
   @weakify(self);
   self.test = ^(){
